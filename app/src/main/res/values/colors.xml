@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorGradientStart">#AE8625</color>
+    <color name="colorGradientCenter">#F7EF8A</color>
+    <color name="colorGradientEnd">#EDC967</color>
+    <color name="GradientStart">#D9FF43</color>
+    <color name="GradientCenter">#F67831</color>
+    <color name="GradientEnd">#FF1493</color>
+    <color name="iosBlueColor">#147EFB</color>
+    <color name="iosOrangeColor">#ff9530</color>
+    <color name="iosPurpleColor">#5856d6</color>
+    <color name="iosGreyColor">#4B4B4C</color>
+    <color name="iosLightBlue">#5ac8fa</color>
+    <color name="iosYellowColor">#FECB2E</color>
+    <color name="app_main_color">#553BD5</color>
+    <color name="app_secondary_color">#E24462</color>
+    <color name="apphintColor">#8D8D8D</color>
+    <color name="apphintBackground">#363636</color>
+    <color name="red">#FF0000</color>
+</resources>

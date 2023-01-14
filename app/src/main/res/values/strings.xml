@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ticketing App</string>
+    <string name="login">Log in</string>
+    <string name="comedy">Comedy</string>
+    <string name="play">Play</string>
+    <string name="movie">Movie</string>
+</resources>

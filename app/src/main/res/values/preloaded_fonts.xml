@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/adamina</item>
+        <item>@font/alatsi</item>
+        <item>@font/dm_serif_text</item>
+        <item>@font/dm_serif_text_italic</item>
+        <item>@font/pacifico</item>
+    </array>
+</resources>

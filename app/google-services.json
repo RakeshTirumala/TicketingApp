@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1040497788485",
+    "firebase_url": "https://ticketting-afc73-default-rtdb.firebaseio.com",
+    "project_id": "ticketting-afc73",
+    "storage_bucket": "ticketting-afc73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040497788485:android:b82e0fb824b6fdd14dc52c",
+        "android_client_info": {
+          "package_name": "purple.lightning.ticketingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040497788485-ncp7msd7rs1qrfrd48fphfq412ld7tpe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "purple.lightning.ticketingapp",
+            "certificate_hash": "6c68d794d6cea13e39f40f183755fbca3d803ce9"
+          }
+        },
+        {
+          "client_id": "1040497788485-cfam3h05g3s6u6n27mk530lcoj0d0v5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFTBP8okY5u7BaICkSGTdXkbcGDpxTUSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040497788485-cfam3h05g3s6u6n27mk530lcoj0d0v5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
