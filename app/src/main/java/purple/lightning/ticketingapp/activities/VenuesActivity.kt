@@ -35,7 +35,7 @@ class VenuesActivity : AppCompatActivity(), LinearVenuesAdapter.LinearOnClickLis
         username = bundle?.getString("username").toString()
 
         // FETCHING THE ALL SHOWS DATA AGAIN
-        val serviceGenerator = ServiceGenerator.buildService(ApiService::class.java)
+        val serviceGenerator = ServiceGenerator.buildService2(ApiService::class.java)
         val callAllShows = serviceGenerator.getAllShows()
 
         val progressDialog = ProgressDialog(this)
