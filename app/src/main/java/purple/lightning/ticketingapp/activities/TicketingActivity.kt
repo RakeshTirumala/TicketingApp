@@ -79,7 +79,9 @@ class TicketingActivity : AppCompatActivity(), GridShowAdapter.GridOnClickListen
 
             override fun onFailure(call: Call<MutableList<Show>>, t: Throwable) {
                 t.printStackTrace()
-                Log.d("[CODE]:",t.message.toString())
+                Log.d("[CODE]: ","FAILED TO GET THE DATA ${t.message.toString()}")
+                onRestart()
+                Log.d("[CODE]:", "Restarting...")
             }
 
         })

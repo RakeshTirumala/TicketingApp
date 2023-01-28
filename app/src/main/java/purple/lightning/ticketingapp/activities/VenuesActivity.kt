@@ -11,6 +11,8 @@ import models.Venue
 import purple.lightning.ticketingapp.databinding.ActivityVenuesBinding
 import reqs.ApiService
 import adapters.LinearVenuesAdapter
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 import reqs.ServiceGenerator
 import retrofit2.Call
 import retrofit2.Callback
@@ -35,14 +37,13 @@ class VenuesActivity : AppCompatActivity(), LinearVenuesAdapter.LinearOnClickLis
         username = bundle?.getString("username").toString()
 
         // FETCHING THE ALL SHOWS DATA AGAIN
-        val serviceGenerator = ServiceGenerator.buildService2(ApiService::class.java)
+        val serviceGenerator = ServiceGenerator.buildService(ApiService::class.java)
         val callAllShows = serviceGenerator.getAllShows()
 
         val progressDialog = ProgressDialog(this)
         progressDialog.setMessage("Loading...")
         progressDialog.setCancelable(false)
         progressDialog.show()
-
         callAllShows.enqueue(object : Callback<MutableList<Show>> {
             override fun onResponse(
                 call: Call<MutableList<Show>>,
@@ -73,7 +74,7 @@ class VenuesActivity : AppCompatActivity(), LinearVenuesAdapter.LinearOnClickLis
                             }
 
                             override fun onFailure(call: Call<MutableMap<String, MutableMap<String, String>>>, t: Throwable) {
-                                TODO("Not yet implemented")
+                                onRestart()
                             }
 
                         })
@@ -87,11 +88,10 @@ class VenuesActivity : AppCompatActivity(), LinearVenuesAdapter.LinearOnClickLis
             override fun onFailure(call: Call<MutableList<Show>>, t: Throwable) {
                 t.printStackTrace()
                 Log.d("[CODE]:",t.message.toString())
+                onRestart()
             }
 
         })
-
-
     }
 
     private fun setUpLinearViewOfAvailVenues(){
